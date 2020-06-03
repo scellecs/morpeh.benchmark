@@ -1,6 +1,6 @@
 # Simple Interation Benchmark.  
 Main Scene is `Assets/Benchmark/SelectorScene.scene`.  
-By default 100.000 GameObjects with Transform which moving along (0,0,1) vector.  
+By default there are 100.000 GameObjects with Transform which moving along (0,0,1) vector.  
 Unity Editor Version is 2019.3.15f1 (59ff3e03856d)  
   
 ## MonoBehaviours  
