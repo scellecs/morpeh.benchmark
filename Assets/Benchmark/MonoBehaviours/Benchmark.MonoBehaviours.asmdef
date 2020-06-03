@@ -1,0 +1,15 @@
+{
+    "name": "Benchmark.MonoBehaviours",
+    "references": [
+        "GUID:044b68bbbe1f4734eb4e2301b9409f7a"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
