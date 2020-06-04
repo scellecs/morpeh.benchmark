@@ -1,0 +1,18 @@
+{
+    "name": "Benchmark.LeoEcs",
+    "references": [
+        "GUID:656c2c43d3cfe4855bd40e058874b0be",
+        "GUID:f9657f10179e94af08566a62f2c6a13f",
+        "GUID:044b68bbbe1f4734eb4e2301b9409f7a",
+        "GUID:3377deebfb0acde45876d12c6e3d27cc"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
