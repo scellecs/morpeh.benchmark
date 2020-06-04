@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Benchmark/Morpeh/MorpehJobScene.unity
     guid: 0ae0d14e5c8c8cd44b88890dea757a9d
+  - enabled: 1
+    path: Assets/Benchmark/LeoEcs/LeoEcsScene.unity
+    guid: 95572e19ab2134f5493772080f19924b
   m_configObjects: {}
