@@ -1,4 +1,6 @@
-﻿using Pixeye.Actors;
+﻿using System.Runtime.CompilerServices;
+using Unity.IL2CPP.CompilerServices;
+using Pixeye.Actors;
 using UnityEngine;
 
 
@@ -12,14 +14,20 @@ namespace Game.Source
 
   #region HELPERS
 
+  [Il2CppSetOption(Option.NullChecks, false)]
+  [Il2CppSetOption(Option.ArrayBoundsChecks, false)]
+  [Il2CppSetOption(Option.DivideByZeroChecks, false)]
   static partial class Component
   {
     public const string BenchClass = "Game.Source.ComponentBenchClass";
-
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static ref ComponentBenchClass ComponentBenchClass(in this ent entity) =>
       ref Storage<ComponentBenchClass>.components[entity.id];
   }
 
+  [Il2CppSetOption(Option.NullChecks, false)]
+  [Il2CppSetOption(Option.ArrayBoundsChecks, false)]
+  [Il2CppSetOption(Option.DivideByZeroChecks, false)]
   sealed class StorageComponentBenchClass : Storage<ComponentBenchClass>
   {
     public override ComponentBenchClass Create() => new ComponentBenchClass();
