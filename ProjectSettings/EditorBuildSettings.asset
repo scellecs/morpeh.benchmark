@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Benchmark/LeoEcs/LeoEcsScene.unity
     guid: 95572e19ab2134f5493772080f19924b
+  - enabled: 1
+    path: Assets/Benchmark/Actors/Scene Actors Bench.unity
+    guid: 81be6c1b0b115da41a803d1ce3d61dee
   m_configObjects: {}

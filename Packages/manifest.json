@@ -2,6 +2,7 @@
   "dependencies": {
     "com.leopotam.ecs": "https://github.com/Leopotam/ecs.git#develop",
     "com.leopotam.ecs-types": "https://github.com/Leopotam/ecs-types.git#develop",
+    "com.pixeye.ecs": "https://github.com/PixeyeHQ/actors.unity.git#develop",
     "com.unity.collab-proxy": "1.2.16",
     "com.unity.ide.rider": "1.1.4",
     "com.unity.ide.vscode": "1.2.0",
@@ -51,6 +52,10 @@
     "com.leopotam.ecs-types": {
       "revision": "develop",
       "hash": "b0d1224ba7c7e6c2855f4287e423907ebca77661"
+    },
+    "com.pixeye.ecs": {
+      "revision": "develop",
+      "hash": "9da59cccdd80f0989923e61af9fb0b7501d8bb33"
     },
     "com.xcrew.morpeh": {
       "revision": "develop",
