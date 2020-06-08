@@ -11,12 +11,12 @@ namespace Pixeye.Source {
     protected override void OnAwake() {
       var prefab = Box.Load<GameObject>("MonoPoint");
 
-      for (int i = 0, length = 100_000; i < length; i++) {
+      for (int i = 0, length = CountInput.CountEntities; i < length; i++) {
         var     entity = Entity.Create(prefab);
         ref var eBench = ref entity.Set<ComponentBench>();
         eBench.transform          = entity.transform;
         eBench.position           = new Vector3(Random.Range(-100f, 100f), Random.Range(-100f, 100f), Random.Range(-100f, 100f));
-        entity.transform.position = eBench.position;
+        entity.transform.localPosition = eBench.position;
       }
     }
 
@@ -26,7 +26,7 @@ namespace Pixeye.Source {
         cBench.position.x         += moveVector.x;
         cBench.position.y         += moveVector.y;
         cBench.position.z         += moveVector.z;
-        cBench.transform.position =  cBench.position;
+        cBench.transform.localPosition =  cBench.position;
       }
     }
   }

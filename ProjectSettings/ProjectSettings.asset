@@ -91,7 +91,7 @@ PlayerSettings:
   xboxEnableFitness: 0
   visibleInBackground: 1
   allowFullscreenSwitch: 1
-  fullscreenMode: 3
+  fullscreenMode: 1
   xboxSpeechDB: 0
   xboxEnableHeadOrientation: 0
   xboxEnableGuest: 0
@@ -575,7 +575,7 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLWasmStreaming: 0
   scriptingDefineSymbols:
-    1: ACTORS_TAGS_6;ACTORS_COMPONENTS_STRUCTS;MORPEH
+    1: ACTORS_TAGS_6;MORPEH;ACTORS_TAGS_CHECKS;MORPEH_DISABLE_AUTOINITIALIZATION
   platformArchitecture: {}
   scriptingBackend:
     Standalone: 1
