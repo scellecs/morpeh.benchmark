@@ -47,7 +47,7 @@
   "lock": {
     "com.leopotam.ecs": {
       "revision": "develop",
-      "hash": "4223372c57cb0126e51ddd663c4d6bbd6716c73c"
+      "hash": "bb553777bcd71684fc452bea45f9a18325cedff0"
     },
     "com.leopotam.ecs-types": {
       "revision": "develop",
@@ -55,7 +55,7 @@
     },
     "com.pixeye.ecs": {
       "revision": "bench",
-      "hash": "6af303255d17815e8187cb570df51a74af82487d"
+      "hash": "3347fb99f4903dcb6c008b92737509ecb04546ad"
     },
     "com.xcrew.morpeh": {
       "revision": "develop",

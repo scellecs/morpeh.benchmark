@@ -1,6 +1,7 @@
 ﻿using Pixeye.Actors;
 using UnityEngine;
 using Unity.IL2CPP.CompilerServices;
+using System.Runtime.CompilerServices;
 
 namespace Game.Source
 {
@@ -19,8 +20,9 @@ namespace Game.Source
   {
     public const string Bench = "Game.Source.ComponentBench";
 
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static ref ComponentBench ComponentBench(in this ent entity) =>
-      ref Storage<ComponentBench>.components[entity.byte1 | (entity.byte2 << 0x8) | (entity.byte3 << 0x10)];
+      ref Storage<ComponentBench>.components[entity.id];
   }
 
   [Il2CppSetOption(Option.NullChecks, false)]
