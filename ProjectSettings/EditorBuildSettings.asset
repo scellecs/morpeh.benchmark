@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Benchmark/Morpeh/MorpehAddRemoveScene.unity
     guid: 089c53968d4b5f24a98a2e7fa5c54641
+  - enabled: 1
+    path: Assets/Benchmark/LeoEcs/LeoEcsAddRemoveScene.unity
+    guid: 10d957dc23d17c843aef06a116a84858
   m_configObjects: {}
