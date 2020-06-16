@@ -18,13 +18,18 @@ public sealed class BenchAddRemoveSystem : UpdateSystem {
     }
 
     public override void OnUpdate(float deltaTime) {
+        var i = 0;
         if (this.adding) {
-            for (int i = 0, length = this.without.Length - 1; i < length; i += CountInput.AddRemoveStep) {
-                this.without.GetEntity(i).AddComponent<BenchAddRemoveComponent>();
+            foreach (var entity in this.without) { 
+                if (i++ % CountInput.AddRemoveStep == 0) {
+                    entity.AddComponent<BenchAddRemoveComponent>();
+                }
             }
         } else {
-            for (int i = 0, length = this.with.Length - 1; i < length; i += CountInput.AddRemoveStep) {
-                this.with.GetEntity(i).RemoveComponent<BenchAddRemoveComponent>();
+            foreach (var entity in this.with) { 
+                if (i++ % CountInput.AddRemoveStep == 0) {
+                    entity.RemoveComponent<BenchAddRemoveComponent>();
+                }
             }
         }
 

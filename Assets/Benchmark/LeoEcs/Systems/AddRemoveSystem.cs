@@ -10,26 +10,26 @@ namespace Benchmarks.LeoEcs {
         readonly EcsFilter<Movable>.Exclude<NonEmpty> _without = null;
         readonly LocalSharedState _lss = null;
         
-        bool adding = true;
+        bool _adding = true;
 
         public void Run () {
-            if (adding) {
+            var i = 0;
+            
+            if (_adding) {
                 foreach (var index in _without) {
-                    for (int i = 0, length = _without.GetEntitiesCount () - 1; i < length; i += _lss.AddRemoveStep) {
-                        _without.GetEntity (i).Get<NonEmpty> ();
+                    if (i++ % _lss.AddRemoveStep == 0) {
+                        _without.GetEntity (index).Get<NonEmpty> ();
                     }
-                    break;
                 }
             } else {
                 foreach (var index in _with) {
-                    for (int i = 0, length = _with.GetEntitiesCount () - 1; i < length; i += _lss.AddRemoveStep) {
-                        _with.GetEntity (i).Del<NonEmpty> ();
+                    if (i++ % _lss.AddRemoveStep == 0) {
+                        _with.GetEntity (index).Del<NonEmpty> ();
                     }
-                    break;
                 }
             }
 
-            adding = !adding;
+            _adding = !_adding;
         }
     }
 }
