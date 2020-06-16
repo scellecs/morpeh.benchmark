@@ -1,9 +1,9 @@
-using Leopotam.Ecs;
+﻿using Leopotam.Ecs;
 using UnityEngine;
 
 #pragma warning disable CS0649
 namespace Benchmarks.LeoEcs {
-    sealed class LeoEcsStartup : MonoBehaviour {
+    sealed class LeoEcsAddRemoveStartup : MonoBehaviour {
         [SerializeField] Transform _prefab;
         EcsWorld _world;
         EcsSystems _systems;
@@ -11,6 +11,7 @@ namespace Benchmarks.LeoEcs {
         void Start () {
             var lss = new LocalSharedState ();
             lss.Count = CountInput.CountEntities;
+            lss.AddRemoveStep = CountInput.AddRemoveStep;
             lss.Prefab = _prefab;
 
             var worldCfg = new EcsWorldConfig () {
@@ -23,6 +24,7 @@ namespace Benchmarks.LeoEcs {
             _systems
                 .Add (new InitSystem ())
                 .Add (new MoveSystem ())
+                .Add (new AddRemoveSystem())
                 .Inject (lss)
                 .Init ();
         }

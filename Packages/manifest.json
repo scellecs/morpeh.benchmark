@@ -47,7 +47,7 @@
   "lock": {
     "com.leopotam.ecs": {
       "revision": "develop",
-      "hash": "bb553777bcd71684fc452bea45f9a18325cedff0"
+      "hash": "d34556bf46a15b2669784070023d4b2de10def2e"
     },
     "com.leopotam.ecs-types": {
       "revision": "develop",
@@ -59,7 +59,7 @@
     },
     "com.xcrew.morpeh": {
       "revision": "develop",
-      "hash": "48864c61455b0b2aa6eca1c5ca57ba6f8da1f140"
+      "hash": "9f7062f5ab6a1c3dd87a31f224322ac697319f78"
     }
   }
 }
