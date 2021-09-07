@@ -3,13 +3,14 @@
     "com.leopotam.ecs": "https://github.com/Leopotam/ecs.git#develop",
     "com.leopotam.ecs-types": "https://github.com/Leopotam/ecs-types.git#develop",
     "com.pixeye.ecs": "https://github.com/PixeyeHQ/actors.unity.git#bench",
-    "com.unity.collab-proxy": "1.2.16",
-    "com.unity.ide.rider": "1.1.4",
-    "com.unity.ide.vscode": "1.2.0",
+    "com.unity.collab-proxy": "1.7.1",
+    "com.unity.ide.rider": "2.0.7",
+    "com.unity.ide.visualstudio": "2.0.11",
+    "com.unity.ide.vscode": "1.2.3",
     "com.unity.jobs": "0.2.10-preview.11",
-    "com.unity.test-framework": "1.1.14",
-    "com.unity.textmeshpro": "2.0.1",
-    "com.unity.timeline": "1.2.14",
+    "com.unity.test-framework": "1.1.27",
+    "com.unity.textmeshpro": "3.0.6",
+    "com.unity.timeline": "1.4.8",
     "com.unity.ugui": "1.0.0",
     "com.xcrew.morpeh": "https://github.com/X-Crew/Morpeh.git#develop",
     "com.unity.modules.ai": "1.0.0",
@@ -43,23 +44,5 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
-  },
-  "lock": {
-    "com.leopotam.ecs": {
-      "revision": "develop",
-      "hash": "bb553777bcd71684fc452bea45f9a18325cedff0"
-    },
-    "com.leopotam.ecs-types": {
-      "revision": "develop",
-      "hash": "b0d1224ba7c7e6c2855f4287e423907ebca77661"
-    },
-    "com.pixeye.ecs": {
-      "revision": "bench",
-      "hash": "3347fb99f4903dcb6c008b92737509ecb04546ad"
-    },
-    "com.xcrew.morpeh": {
-      "revision": "develop",
-      "hash": "48864c61455b0b2aa6eca1c5ca57ba6f8da1f140"
-    }
   }
 }
